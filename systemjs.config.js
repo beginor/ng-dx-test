@@ -29,14 +29,16 @@
       // ng-bootstrap
       '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
       // devextreme & devextreme deps
-      'devextreme': 'npm:devextreme',                   // <== add this line
-      'jquery': 'npm:jquery/dist/jquery.min.js',        // <== add this line
-      'jszip': 'npm:jszip/dist/jszip.min.js',           // <== add this line
-      'devextreme-angular': 'npm:devextreme-angular'   // <== add this line
+      'devextreme': 'npm:devextreme',
+      'jquery': 'npm:jquery/dist/jquery.min.js',
+      'jszip': 'npm:jszip/dist/jszip.min.js',
+      'devextreme-angular': 'npm:devextreme-angular'
     },
     packages: {
       'rxjs': { defaultExtension: 'js' },
-      'app': { main: 'main.js', defaultExtension: 'js', format: 'cjs' }
+      'app': { main: 'main.js', defaultExtension: 'js', format: 'cjs' },
+      'devextreme-angular': { main: 'index.js', defaultExtension: 'js' },
+      'devextreme': { defaultExtension: 'js' }
     }
   });
 })(this);

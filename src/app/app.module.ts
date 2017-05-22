@@ -6,6 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { DxButtonModule, DxDataGridModule } from 'devextreme-angular'
+
 import { AppComponent }   from './app.component';
 import { RouteComponents, AppRoutes } from './app.routes';
 
@@ -22,7 +25,9 @@ import { RouteComponents, AppRoutes } from './app.routes';
         ReactiveFormsModule,
         HttpModule,
         JsonpModule,
-        NgbModule,
+        NgbModule.forRoot(),
+        DxButtonModule,
+        DxDataGridModule,
         AppRoutes
     ],
     bootstrap: [AppComponent]
