@@ -1,6 +1,8 @@
 import rollup from 'rollup'
-import nodeResolve from 'rollup-plugin-node-resolve'
+import alias from 'rollup-plugin-alias';
 import commonjs from 'rollup-plugin-commonjs';
+import css from 'rollup-plugin-css-only';
+import nodeResolve from 'rollup-plugin-node-resolve'
 import uglify from 'rollup-plugin-uglify'
 
 export default {
@@ -9,13 +11,17 @@ export default {
   sourceMap: false,
   format: 'iife',
   plugins: [
+    // css({ output: 'dist/build.css' }),
+    alias({
+      jszip: './node_modules/jszip/dist/jszip.min.js'
+    }),
+    commonjs({
+      include: 'node_modules/rxjs/**',
+    }),
     nodeResolve({
       jsnext: true,
       module: true,
       externals: []
-    }),
-    commonjs({
-      include: 'node_modules/rxjs/**',
     }),
     uglify()
   ]

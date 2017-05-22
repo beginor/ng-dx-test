@@ -27,7 +27,12 @@
       // rxjs 
       'rxjs': 'npm:rxjs',
       // ng-bootstrap
-      '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js'
+      '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+      // devextreme & devextreme deps
+      'devextreme': 'npm:devextreme',                   // <== add this line
+      'jquery': 'npm:jquery/dist/jquery.min.js',        // <== add this line
+      'jszip': 'npm:jszip/dist/jszip.min.js',           // <== add this line
+      'devextreme-angular': 'npm:devextreme-angular'   // <== add this line
     },
     packages: {
       'rxjs': { defaultExtension: 'js' },
