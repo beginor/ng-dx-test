@@ -7,7 +7,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { DxButtonModule, DxDataGridModule } from 'devextreme-angular'
+import { DxButtonModule } from 'devextreme-angular/ui/button';
+import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
 
 import { AppComponent }   from './app.component';
 import { RouteComponents, AppRoutes } from './app.routes';
