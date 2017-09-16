@@ -1,5 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
 
 @Component({
     moduleId: module.id,
@@ -9,17 +9,17 @@ import { Http } from '@angular/http';
 })
 export class GridComponent implements OnInit {
 
-    dataSource: any[] = [];
+    public dataSource: any[] = [];
 
     constructor(
-        private http: Http
+        private http: HttpClient
     ) { }
 
-    ngOnInit() {
-        this.http.get(
+    public ngOnInit() {
+        this.http.get<any[]>(
             'http://gishub.gdepb.gov.cn/rest/datasources/3f49c0a95ec945b5b92b437846a29243/data'
-        ).subscribe(response => {
-            this.dataSource = response.json();
+        ).subscribe(data => {
+            this.dataSource = data;
         });
     }
 
