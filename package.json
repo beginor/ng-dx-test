@@ -22,7 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/beginor/angular-seed.git"
   },
-  "keywords": ["angular", "seed", "gulp", "systemjs"],
+  "keywords": [
+    "angular",
+    "seed",
+    "gulp",
+    "systemjs"
+  ],
   "author": "beginor",
   "license": "MIT",
   "bugs": {
