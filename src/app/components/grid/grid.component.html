@@ -1,11 +1,9 @@
 <dx-data-grid id="dxGrid" [dataSource]="dataSource" height='100%'
-                [hoverStateEnabled]="true"
-                [selectedRowKeys]="[]"
-                >
-                <dxo-scrolling mode="virtual"></dxo-scrolling>
-                <dxo-selection mode="single"></dxo-selection>
-                <dxi-column [width]="150" caption="监测点名称" dataField="name"></dxi-column>
-                <dxi-column width="70px" caption="地区" dataField="area_name"></dxi-column>
-                <dxi-column caption="类型" dataField="type_name"></dxi-column>
-                <dxi-column caption="级别" dataField="controle_level_name"></dxi-column>
-            </dx-data-grid>
+  [hoverStateEnabled]="true" [selectedRowKeys]="[]" [@state]="state">
+  <dxo-scrolling mode="virtual"></dxo-scrolling>
+  <dxo-selection mode="single"></dxo-selection>
+  <dxi-column [width]="150" caption="监测点名称" dataField="name"></dxi-column>
+  <dxi-column width="70px" caption="地区" dataField="area_name"></dxi-column>
+  <dxi-column caption="类型" dataField="type_id"></dxi-column>
+  <dxi-column caption="级别" dataField="controle_level_name"></dxi-column>
+</dx-data-grid>
