@@ -26,7 +26,7 @@ import { AppRoutes, RouteComponents } from './app.routes';
         ReactiveFormsModule,
         HttpClientModule,
         HttpClientJsonpModule,
-        NgbModule,
+        NgbModule.forRoot(),
         DxButtonModule,
         DxDataGridModule,
         AppRoutes
