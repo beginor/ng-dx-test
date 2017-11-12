@@ -1,4 +1,6 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+    animate, state, style, transition, trigger
+} from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +10,7 @@ import 'rxjs/add/operator/toPromise';
     moduleId: module.id,
     selector: 'grid',
     templateUrl: './grid.component.html',
-    styleUrls: ['./grid.component.css'],
+    styleUrls: ['./grid.component.scss'],
     animations: [
         trigger('state', [
             transition(':enter', [
