@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { loadMessages, locale } from 'devextreme/localization';
+import { localeMessages, localeName } from 'dx-locale-zh-cn';
 
 @Component({
     moduleId: module.id,
@@ -6,6 +9,11 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+    public ngOnInit(): void {
+        loadMessages(localeMessages);
+        locale(localeName);
+    }
 
 }
