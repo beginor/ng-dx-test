@@ -8,6 +8,14 @@ if (environment.production) {
     enableProdMode();
 }
 
+import { loadMessages, locale } from 'devextreme/localization';
+
+const zhMessages = require(
+    `devextreme/localization/messages/zh.json`
+);
+loadMessages(zhMessages);
+locale('zh');
+
 platformBrowserDynamic().bootstrapModule(AppModule)
     .then(val => {
         // console.log('app bootstrap');

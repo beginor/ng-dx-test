@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { loadMessages, locale } from 'devextreme/localization';
-import { localeMessages, localeName } from 'dx-locale-zh-cn';
-
 @Component({
     moduleId: module.id,
     selector: 'app-root',
@@ -11,11 +8,10 @@ import { localeMessages, localeName } from 'dx-locale-zh-cn';
 })
 export class AppComponent implements OnInit {
 
+    public collapsed = true;
+
     public ngOnInit(): void {
-        loadMessages(localeMessages);
-        locale(localeName);
     }
 
-    public collapsed = true;
 
 }

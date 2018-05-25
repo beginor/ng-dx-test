@@ -1,38 +1,22 @@
-import {
-    animate, state, style, transition, trigger
-} from '@angular/animations';
+import { trigger, transition, useAnimation } from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-import 'rxjs/add/operator/toPromise';
+import { fadeIn } from '../../animations';
 
 @Component({
     moduleId: module.id,
-    selector: 'grid',
+    selector: 'app-grid',
     templateUrl: './grid.component.html',
     styleUrls: ['./grid.component.scss'],
     animations: [
-        trigger('state', [
-            transition(':enter', [
-                style({
-                    opacity: 0
-                }),
-                animate(300)
-            ]),
-            transition(':leave', [
-                animate(300),
-                style({
-                    opacity: 0
-                })
-            ])
-        ])
-    ]
+        trigger('fadeIn', [transition(':enter', useAnimation(fadeIn))])
+    ],
+    host: { '[@fadeIn]': '' }
 })
 export class GridComponent implements OnInit {
 
     public dataSource: any[] = [];
-
-    public state: any;
 
     constructor(
         private http: HttpClient
