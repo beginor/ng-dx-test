@@ -16,4 +16,6 @@ export class AppComponent implements OnInit {
         locale(localeName);
     }
 
+    public collapsed = true;
+
 }

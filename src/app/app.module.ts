@@ -10,13 +10,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DxButtonModule } from 'devextreme-angular/ui/button';
 import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppRoutes, RouteComponents } from './app.routes';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        RouteComponents
+        HomeComponent,
+        AboutComponent
     ],
     imports: [
         BrowserModule,
@@ -29,7 +32,7 @@ import { AppRoutes, RouteComponents } from './app.routes';
         NgbModule.forRoot(),
         DxButtonModule,
         DxDataGridModule,
-        AppRoutes
+        AppRoutingModule
     ],
     bootstrap: [AppComponent]
 })
