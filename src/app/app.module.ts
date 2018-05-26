@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { DxButtonModule } from 'devextreme-angular/ui/button';
 import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +31,6 @@ import { GridComponent } from './components/grid/grid.component';
         HttpClientModule,
         HttpClientJsonpModule,
         NgbModule.forRoot(),
-        DxButtonModule,
         DxDataGridModule,
         AppRoutingModule
     ],
