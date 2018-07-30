@@ -2,7 +2,7 @@ import { trigger, transition, useAnimation } from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-import { fadeIn } from '../../animations';
+import { fadeIn } from 'ng-animations';
 
 @Component({
     moduleId: module.id,
@@ -22,15 +22,20 @@ export class GridComponent implements OnInit {
         private http: HttpClient
     ) { }
 
-    public ngOnInit() {
-        const id = '3f49c0a95ec945b5b92b437846a29243';
-        this.http.get<any[]>(
-            `http://gishub.gdepb.gov.cn/rest/datasources/${id}/data`
-        ).toPromise().then(data => {
+    public async ngOnInit(): Promise<void> {
+        try {
+            const id = '3f49c0a95ec945b5b92b437846a29243';
+            await this.http.get(
+                'http://gishub.gdepb.gov.cn/rest/request-token'
+            ).toPromise();
+            const data = await this.http.get<any[]>(
+                `http://gishub.gdepb.gov.cn/rest/datasources/${id}/data`
+            ).toPromise();
             this.dataSource = data;
-        }).catch(ex => {
+        }
+        catch (ex) {
             console.error(ex);
-        });
+        }
     }
 
 }
