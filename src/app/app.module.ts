@@ -30,7 +30,7 @@ import { GridComponent } from './components/grid/grid.component';
         ReactiveFormsModule,
         HttpClientModule,
         HttpClientJsonpModule,
-        NgbModule.forRoot(),
+        NgbModule,
         DxDataGridModule,
         AppRoutingModule
     ],
