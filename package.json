@@ -45,9 +45,9 @@
     "@ng-bootstrap/ng-bootstrap": "^3.2.0",
     "@fortawesome/fontawesome-free": "^5.3.0",
     "ng-animations": "^1.0.0",
-    "devextreme": "^18.1.4",
-    "devextreme-angular": "^18.1.4",
-    "devextreme-intl": "^18.1.4"
+    "devextreme": "^18.1.6",
+    "devextreme-angular": "^18.1.6",
+    "devextreme-intl": "^18.1.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
