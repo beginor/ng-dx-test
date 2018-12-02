@@ -1,5 +1,5 @@
 export const environment = {
     hmr: false,
-    production: truetrue,
+    production: true,
     dxLocale: 'zh'
 };
