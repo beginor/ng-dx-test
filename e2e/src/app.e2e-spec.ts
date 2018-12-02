@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-seed App', () => {
+describe('ng-dx-test App', () => {
 
     let page: AppPage;
 

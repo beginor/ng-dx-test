@@ -1,6 +1,6 @@
 import { HomePage } from './home.po';
 
-describe('ng-seed Home', () => {
+describe('ng-dx-test Home', () => {
 
     let page: HomePage;
 
