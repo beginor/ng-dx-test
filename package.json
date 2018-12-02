@@ -1,12 +1,12 @@
 {
-  "name": "ng-seed",
+  "name": "ng-dx-test",
   "version": "1.0.0",
   "description": "angular seed app",
   "main": "src/index.html",
   "scripts": {
     "clean": "rm -rf dist coverage",
     "ng": "ng",
-    "build": "ng build --prod --base-href=/ng-seed/ --deploy-url=/ng-seed/",
+    "build": "ng build --prod --base-href=/ng-dx-test/ --deploy-url=/ng-dx-test/",
     "lint": "ng lint",
     "start": "ng serve --host 0.0.0.0",
     "test": "ng test --watch",
@@ -16,15 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beginor/ng-seed.git"
+    "url": "git+https://github.com/beginor/ng-dx-test.git"
   },
-  "keywords": ["angular", "seed", "angular-cli"],
+  "keywords": [
+    "angular",
+    "seed",
+    "angular-cli"
+  ],
   "author": "beginor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beginor/ng-seed/issues"
+    "url": "https://github.com/beginor/ng-dx-test/issues"
   },
-  "homepage": "https://github.com/beginor/ng-seed#readme",
+  "homepage": "https://github.com/beginor/ng-dx-test#readme",
   "dependencies": {
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
@@ -42,9 +46,9 @@
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
     "ng-animations": "^1.0.0",
-    "devextreme": "^18.1.6",
-    "devextreme-angular": "^18.1.6",
-    "devextreme-intl": "^18.1.6"
+    "devextreme": "^18.2.3",
+    "devextreme-angular": "^18.2.3",
+    "devextreme-intl": "^18.2.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.11.0",
