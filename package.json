@@ -45,10 +45,10 @@
     "bootstrap": "^4.2.0",
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "@fortawesome/fontawesome-free": "^5.5.0",
-    "ng-animations": "^1.0.0",
-    "devextreme": "^18.2.3",
-    "devextreme-angular": "^18.2.3",
-    "devextreme-intl": "^18.2.3"
+    "ng-animations": "^2.0.0",
+    "devextreme": "^18.2.4",
+    "devextreme-angular": "^18.2.4",
+    "devextreme-intl": "^18.2.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.11.0",
