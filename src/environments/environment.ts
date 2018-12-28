@@ -3,7 +3,6 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-    hmr: true,
     production: false,
     dxLocale: 'zh'
 };
